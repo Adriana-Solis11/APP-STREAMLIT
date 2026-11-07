@@ -1,0 +1,132 @@
+
+(base) C:\Users\O28130>cd Downloads
+
+(base) C:\Users\O28130\Downloads>pip install streamlit pandas scikit-learn matplotlib openpyxl
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: streamlit in C:\ProgramData\Anaconda3\Lib\site-packages (1.61.1)
+Requirement already satisfied: pandas in C:\ProgramData\Anaconda3\Lib\site-packages (3.0.5)
+Requirement already satisfied: scikit-learn in C:\ProgramData\Anaconda3\Lib\site-packages (1.9.0)
+Requirement already satisfied: matplotlib in C:\ProgramData\Anaconda3\Lib\site-packages (3.11.0)
+Requirement already satisfied: openpyxl in C:\ProgramData\Anaconda3\Lib\site-packages (3.1.5)
+Requirement already satisfied: altair!=5.4.0,!=5.4.1,<7,>=5.0.0 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (6.2.2)
+Requirement already satisfied: blinker<2,>=1.5.0 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (1.9.0)
+Requirement already satisfied: click<9,>=7.0 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (8.4.1)
+Requirement already satisfied: numpy<3,>=1.23 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (2.4.6)
+Requirement already satisfied: packaging>=20 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (26.2)
+Requirement already satisfied: pillow<13,>=7.1.0 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (12.3.0)
+Requirement already satisfied: protobuf<8,>=5.26.1 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (6.33.5)
+Requirement already satisfied: pyarrow<25,>=7.0 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (23.0.1)
+Requirement already satisfied: requests<3,>=2.27 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (2.34.2)
+Requirement already satisfied: tenacity<10,>=8.1.0 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (9.1.4)
+Requirement already satisfied: toml<2,>=0.10.1 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (0.10.2)
+Requirement already satisfied: typing-extensions<5,>=4.10.0 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (4.16.0)
+Requirement already satisfied: starlette<1.4.0,>=0.46.0 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (1.3.1)
+Requirement already satisfied: uvicorn<1,>=0.30.0 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (0.40.0)
+Requirement already satisfied: httptools<1,>=0.6.3 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (0.8.0)
+Requirement already satisfied: anyio<5,>=4.0.0 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (4.12.1)
+Requirement already satisfied: python-multipart<1,>=0.0.10 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (0.0.32)
+Requirement already satisfied: websockets<17,>=12.0.0 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (16.0)
+Requirement already satisfied: itsdangerous<3,>=2.1.2 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (2.2.0)
+Requirement already satisfied: watchdog<7,>=2.1.5 in C:\ProgramData\Anaconda3\Lib\site-packages (from streamlit) (6.0.0)
+Requirement already satisfied: python-dateutil>=2.8.2 in C:\ProgramData\Anaconda3\Lib\site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: tzdata in C:\ProgramData\Anaconda3\Lib\site-packages (from pandas) (2026.2)
+Requirement already satisfied: jinja2 in C:\ProgramData\Anaconda3\Lib\site-packages (from altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit) (3.1.6)
+Requirement already satisfied: jsonschema>=3.0 in C:\ProgramData\Anaconda3\Lib\site-packages (from altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit) (4.25.1)
+Requirement already satisfied: narwhals>=2.4.0 in C:\ProgramData\Anaconda3\Lib\site-packages (from altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit) (2.23.0)
+Requirement already satisfied: idna>=2.8 in C:\ProgramData\Anaconda3\Lib\site-packages (from anyio<5,>=4.0.0->streamlit) (3.18)
+Requirement already satisfied: colorama in C:\ProgramData\Anaconda3\Lib\site-packages (from click<9,>=7.0->streamlit) (0.4.6)
+Requirement already satisfied: charset_normalizer<4,>=2 in C:\ProgramData\Anaconda3\Lib\site-packages (from requests<3,>=2.27->streamlit) (3.4.7)
+Requirement already satisfied: urllib3<3,>=1.26 in C:\ProgramData\Anaconda3\Lib\site-packages (from requests<3,>=2.27->streamlit) (2.7.0)
+Requirement already satisfied: certifi>=2023.5.7 in C:\ProgramData\Anaconda3\Lib\site-packages (from requests<3,>=2.27->streamlit) (2026.7.22)
+Requirement already satisfied: h11>=0.8 in C:\ProgramData\Anaconda3\Lib\site-packages (from uvicorn<1,>=0.30.0->streamlit) (0.16.0)
+Requirement already satisfied: scipy>=1.10.0 in C:\ProgramData\Anaconda3\Lib\site-packages (from scikit-learn) (1.18.0)
+Requirement already satisfied: joblib>=1.4.0 in C:\ProgramData\Anaconda3\Lib\site-packages (from scikit-learn) (1.5.3)
+Requirement already satisfied: threadpoolctl>=3.5.0 in C:\ProgramData\Anaconda3\Lib\site-packages (from scikit-learn) (3.5.0)
+Requirement already satisfied: contourpy>=1.0.1 in C:\ProgramData\Anaconda3\Lib\site-packages (from matplotlib) (1.3.3)
+Requirement already satisfied: cycler>=0.10 in C:\ProgramData\Anaconda3\Lib\site-packages (from matplotlib) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in C:\ProgramData\Anaconda3\Lib\site-packages (from matplotlib) (4.63.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in C:\ProgramData\Anaconda3\Lib\site-packages (from matplotlib) (1.5.0)
+Requirement already satisfied: pyparsing>=3 in C:\ProgramData\Anaconda3\Lib\site-packages (from matplotlib) (3.3.2)
+Requirement already satisfied: et-xmlfile in C:\ProgramData\Anaconda3\Lib\site-packages (from openpyxl) (2.0.0)
+Requirement already satisfied: attrs>=22.2.0 in C:\ProgramData\Anaconda3\Lib\site-packages (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit) (26.1.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in C:\ProgramData\Anaconda3\Lib\site-packages (fromjsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit) (2025.9.1)
+Requirement already satisfied: referencing>=0.28.4 in C:\ProgramData\Anaconda3\Lib\site-packages (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit) (0.37.0)
+Requirement already satisfied: rpds-py>=0.7.1 in C:\ProgramData\Anaconda3\Lib\site-packages (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit) (0.28.0)
+Requirement already satisfied: six>=1.5 in C:\ProgramData\Anaconda3\Lib\site-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)
+Requirement already satisfied: MarkupSafe>=2.0 in C:\ProgramData\Anaconda3\Lib\site-packages (from jinja2->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit) (3.0.3)
+
+(base) C:\Users\O28130\Downloads>streamlit run casoRandomForest(2).py
+Usage: streamlit run [OPTIONS] [TARGET] [ARGS]...
+Try 'streamlit run --help' for help.
+
+Error: Invalid value: File does not exist: casoRandomForest(2).py
+
+(base) C:\Users\O28130\Downloads>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 6611-6B7A
+
+ Directory of C:\Users\O28130\Downloads
+
+07/11/2026  07:38    <DIR>          .
+30/09/2026  14:48    <DIR>          ..
+05/11/2026  08:26            20,811 6. Trademap importaciones cantidad.xlsx
+07/11/2026  07:27           371,304 boosting.webp
+31/10/2026  10:26            86,309 CASO SELECCIÓN DE PROVEEDOR TRANSPORTE OCTUBRE 2026.docx
+07/11/2026  07:27            10,094 casoRandomForest (2).py
+30/10/2026  14:25         2,451,275 EF_G01.pbix
+07/11/2026  07:27               111 ejecutarStreamlit (2).txt
+30/10/2026  14:15         2,447,847 g1.pbix
+03/11/2026  08:24             1,836 grafosListaClass.zip
+07/11/2026  07:27         1,743,986 Infografía de Random Forest.png
+04/11/2026  17:03            71,880 Informe de KPIs de Calidad · qc_planta (Semana 11).docx
+04/11/2026  17:27           665,264 Informe una cara (A4).docx
+04/11/2026  17:26           715,197 Informe una cara (A4).pdf
+04/11/2026  17:32            95,411 InformeCalidadPlanta.docx
+04/11/2026  17:29            79,022 Informe_Calidad_qc_planta.docx
+07/11/2026  07:27         8,801,439 output_file (1) (2).csv
+31/10/2026  10:26            15,271 PLANTILLA PARA CASO.xlsx
+04/11/2026  14:53            13,403 S11 · Guía para exponer 4 KPIs de calidad.docx
+04/11/2026  15:00            10,577 S11_QC_KPIs_10estudiantes (1).sql
+04/11/2026  14:56            10,577 S11_QC_KPIs_10estudiantes.sql
+04/11/2026  14:57             7,830 S11_QC_Setup (1).sql
+04/11/2026  14:56             7,830 S11_QC_Setup.sql
+04/11/2026  16:57           495,968 S11_Solucionario_Estudiantes (1).pdf
+04/11/2026  16:50           495,968 S11_Solucionario_Estudiantes.pdf
+03/11/2026  07:26           603,908 semana8(1).pdf
+04/11/2026  17:35               186 v_abc_lotes.csv
+04/11/2026  17:34               299 v_lote_en_maquina.csv
+              26 File(s)     19,223,603 bytes
+               2 Dir(s)  190,437,982,208 bytes free
+
+(base) C:\Users\O28130\Downloads>streamlit run casoRandomForest.py
+
+      Welcome to Streamlit!
+
+      If you'd like to receive helpful onboarding emails, news, offers, promotions,
+      and the occasional swag, please enter your email address below. Otherwise,
+      leave this field blank.
+
+      Email: 20235507@aloe.ulima.edu.pe
+
+  You can find our privacy policy at https://streamlit.io/privacy-policy
+
+  Summary:
+  - This open source library collects usage statistics.
+  - We cannot see and do not store information contained inside Streamlit apps,
+    such as text, charts, images, etc.
+  - Telemetry data is stored in servers in the United States.
+  - If you'd like to opt out, add the following to %userprofile%/.streamlit/config.toml,
+    creating that file if necessary:
+
+    [browser]
+    gatherUsageStats = false
+
+2026-11-07 07:46:15.623 Uvicorn server started on :::8501
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.85.40:8501
+
+  Help agents write better Streamlit apps?
+  Install the official Streamlit skills by running streamlit skills in your terminal.
